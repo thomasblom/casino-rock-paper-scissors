@@ -4,6 +4,8 @@ This is an Angular component which provides an online implementation of a simple
 
 Latest version: _1.0.0_
 
+![Rock, Paper, Scissors](https://raw.githubusercontent.com/thomasblom/casino-rock-paper-scissors/main/rock-paper-scissors.gif)
+
 ### Installation
 ```
 $ npm install @ng-casino/rock-paper-scissors
