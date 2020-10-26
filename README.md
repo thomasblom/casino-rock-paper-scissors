@@ -2,7 +2,7 @@
 
 This is an Angular component which provides an online implementation of a simple game of Rock, Paper, Scissors.
 
-Latest version: _1.0.0_
+Latest version: _1.0.1_
 
 ![Rock, Paper, Scissors](https://raw.githubusercontent.com/thomasblom/casino-rock-paper-scissors/main/rock-paper-scissors.gif)
 
