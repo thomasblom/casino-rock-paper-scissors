@@ -1,0 +1,29 @@
+{
+  "name": "@ng-casino/rock-paper-scissors",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "@angular/common": "^10.1.6",
+    "@angular/core": "^10.1.6"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "description": "Angular component to play a game of Rock, Paper, Scissors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasblom/casino-rock-paper-scissors.git"
+  },
+  "keywords": [
+    "casino",
+    "rock",
+    "paper",
+    "scissors",
+    "game"
+  ],
+  "author": "Thomas Blom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomasblom/casino-rock-paper-scissors/issues"
+  },
+  "homepage": "https://github.com/thomasblom/casino-rock-paper-scissors#readme"
+}

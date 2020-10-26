@@ -1,0 +1,44 @@
+<div class="ng-casino__rps">
+  <ng-container *ngIf="playing">
+    <div class="ng-casino__rps-options">
+      <img class="ng-casino__rps-option ng-casino__rps-option--reversed ng-casino__rps-choice"
+           [src]="choiceImage ? choiceImage : gameImages.rock"/>
+
+      <img class="ng-casino__rps-option ng-casino__rps-choice"
+           [src]="opponentImage ? opponentImage : gameImages.rock"/>
+    </div>
+
+    <ng-container *ngIf="result !== null">
+      <p class="ng-casino__rps-text"
+         *ngIf="result === gameOutcome.Won">{{ wonText ? wonText : 'You have won this game!' }}</p>
+      <p class="ng-casino__rps-text"
+         *ngIf="result === gameOutcome.Lost">{{ lostText ? lostText : 'You have lost this game!' }}</p>
+      <p class="ng-casino__rps-text"
+         *ngIf="result === gameOutcome.Draw">{{ drawText ? drawText : 'There is no winner in this game!' }}</p>
+
+      <div class="ng-casino__rps-try-again">
+        <button class="ng-casino__rps-try-again-button"
+                (click)="resetGame()">{{ tryAgainText ? tryAgainText : 'Try again' }}</button>
+      </div>
+    </ng-container>
+  </ng-container>
+
+  <ng-container *ngIf="!playing">
+    <div class="ng-casino__rps-options">
+      <img class="ng-casino__rps-option"
+           alt="Rock"
+           [src]="images?.rock ? images.rock : gameImages.rock"
+           (click)="play(gameChoice.Rock)"/>
+      <img class="ng-casino__rps-option"
+           alt="Paper"
+           [src]="images?.paper ? images.paper : gameImages.paper"
+           (click)="play(gameChoice.Paper)"/>
+      <img class="ng-casino__rps-option"
+           alt="Scissors"
+           [src]="images?.scissors ? images.scissors : gameImages.scissors"
+           (click)="play(gameChoice.Scissors)"/>
+    </div>
+
+    <p class="ng-casino__rps-text">{{ startText ? startText : 'Make your choice' }}</p>
+  </ng-container>
+</div>

@@ -1,0 +1,42 @@
+.ng-casino__rps-options {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ng-casino__rps-option {
+  width: 33%;
+  height: 33%;
+  cursor: pointer;
+  position: relative;
+
+  &--reversed {
+    transform: scaleX(-1);
+  }
+
+  &:not(.ng-casino__rps-choice):hover {
+    animation: upDownAnimation 1s linear infinite;
+  }
+}
+
+.ng-casino__rps-choice {
+  cursor: default;
+  animation: upDownAnimation .5s linear 3;
+}
+
+.ng-casino__rps-text {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.ng-casino__rps-try-again {
+  text-align: center;
+}
+
+@keyframes upDownAnimation {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: .5rem;
+  }
+}
