@@ -2,7 +2,7 @@
 
 This is an Angular component which provides an online implementation of a simple game of Rock, Paper, Scissors.
 
-Latest version: _1.0.1_
+Latest version: _1.0.2_
 
 ![Rock, Paper, Scissors](https://raw.githubusercontent.com/thomasblom/casino-rock-paper-scissors/main/rock-paper-scissors.gif)
 
@@ -12,6 +12,22 @@ $ npm install @ng-casino/rock-paper-scissors
 ```
 
 ### Usage
+
+Add `RockPaperScissorsModule` to your `AppModule`:
+```
+import {RockPaperScissorsModule} from '@ng-casino/rock-paper-scissors';
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [
+    RockPaperScissorsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {
+}
+```
 
 Basic usage of the component:
 ```html
